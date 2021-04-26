@@ -15,5 +15,5 @@ void BottomBar::make_bar(std::string url, sf::RenderWindow *win)
     text.setCharacterSize(15);
     text.setPosition({static_cast<float>(win_size.x) - (15 * url.size() - 15), static_cast<float>(win_size.y) - 25});
     text.setFillColor(sf::Color{0xA3BE8CFF});
-    text.setString(url);
+    text.setString("http://themostamazingwebsiteontheinternet.com");
 }

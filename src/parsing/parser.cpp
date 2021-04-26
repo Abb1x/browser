@@ -3,8 +3,9 @@
 #include <string>
 #include <utils/log.hpp>
 #include <wctype.h>
-// Spoiler alert: most of the code is inspired by https://github.com/jackfischer/andreessen
 
+// Spoiler alert: most of the code is inspired by https://github.com/jackfischer/andreessen
+// please stop stealing code.... this is unethical and is against POSIX..
 enum state
 {
     TAGNAME,

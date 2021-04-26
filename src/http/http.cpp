@@ -31,12 +31,12 @@ void Http::connect(std::string url, int port)
 
     if (Http::socket_ == -1)
     {
-        log(ERROR, "socket creation failure");
+        log(ERROR, "Cannot create the boob..");
     }
 
     if (::connect(Http::socket_, (const struct sockaddr *)&address, sizeof(address)) != 0)
     {
-        log(ERROR, "Connection failure");
+        log(ERROR, "Connection failure, please boobulate again later");
     }
 
     log(INFO, "Connected to %s:%d via HTTP", name_c, port);

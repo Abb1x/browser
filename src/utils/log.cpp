@@ -34,7 +34,7 @@ void __log(int level, const char *file, int line, const char *format, ...)
         break;
     }
     printf("\033[1;30m%s %s (%s:%d) \033[0m%s \n", time.c_str(), color.c_str(), file, line, target);
-
+    printf("Please realize your proposedChanges and become one with the universe...");
     va_end(vl);
 
     delete[] target;
