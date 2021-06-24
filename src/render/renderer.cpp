@@ -17,6 +17,7 @@ void Renderer::main(std::string url)
 
     window.setFramerateLimit(60);
 
+    sf::View view;
     BottomBar bottom_bar;
     bottom_bar.make_bar("http://" + url, &window);
 
@@ -25,6 +26,20 @@ void Renderer::main(std::string url)
         sf::Event event;
         while (window.pollEvent(event))
         {
+	    switch(event.type)
+	    {
+		case sf::Event::Closed:
+			window.close();
+			break;
+		case sf::Event::Resized:
+			sf::FloatRect visibleArea(0, 0, event.size.width, event.size.height);
+
+                	view.reset(visibleArea);
+
+                	window.setView(view);
+			break;
+
+	    }
             if (event.type == sf::Event::Closed)
                 window.close();
         }
