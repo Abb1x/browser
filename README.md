@@ -9,8 +9,9 @@ Features (right now):
 - HTTP(s)
 - CSS parsing
 - HTML parsing
-- WIP Engine
-
+- WIP Engine 
+- Telescope support
+- Telescope's markup language: star
 ## Supported CSS
 - font-size (numbers only) 
 - color (names and 6 digit hex)
